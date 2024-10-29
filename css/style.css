@@ -1,30 +1,146 @@
+/* Generiche */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.debug{
-    background-color: goldenrod;
-}
-
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: var(--whitefont-color); */
+}
+
+/* Variabili */
+
+:root{
+
+    --navbg-color: #000000 ;
+    --headerbg-color: #161d2e;
+    --mainbg-color: #2a3344;
+    --footerbg-color: #282828;
+
+    --btn-color: #F0F0F0;
+
+    --grayfont-color: #75787D ;
+    --whitefont-color: #FFFFFF ;
+    
+    --Spotify-green: #A5F22E;
+
 }
 
 
-header {
-    height: 60px;
+
+/* Utilities */
+
+.bg-debug{
     background-color: goldenrod;
-  }
-  
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flexdirection-col{
+    flex-direction: column;
+}
+
+.jc-space-between{
+    justify-content: space-between;
+}
+
+.jc-space-around{
+    justify-content: space-around;
+}
+
+.jc-flex-end{
+    justify-content: flex-end;
+}
+
+.jc-center{
+    justify-content: center;
+} 
+
+.jc-flex-start{
+    justify-content: flex-start;
+}
+
+
+.dis-none {
+    display: none;
+}
+
+
+h3{ /*Per i titoli degli album*/
+
+    text-align: center;
+    margin: 10px;
+    color: var(--whitefont-color);
+    font-size: 16px;
+
+}
+
+h1 { /*Per i titoli delle sezioni*/
+    color: var(--whitefont-color);
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+/* Utilities Interagibili*/
+
+.btn-interact:hover{
+    /* DA COMPLETARE */
+}
+
+.link-interact:hover{
+    color: var(--whitefont-color);
+}
+
+.link-interact:active{
+    border-bottom: 2px solid var(--Spotify-green);
+}
+
+
+.album-interact:hover{ /* da completare inserendo il simbolo del PLAY*/
+    cursor: pointer;
+    opacity: 50%;
+
+}
+
+
+/* Button */
+
+
+.btn{
+    border: 2px solid var(--btn-color);
+    color: var(--btn-color);
+    border-radius: 25px;
+    background-color: transparent;
+    padding: 10px 30px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+
+/**/
+
+
 footer {
     height: 100px;
-    background-color: goldenrod;
+    background-color: var(--footerbg-color)
   }
 
 main {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 100px);
+    background-color: var(--mainbg-color);
   }
 
 #main-section{
@@ -32,57 +148,85 @@ main {
     height: 100%;
   }
 
-.dekstopnavbar{
+.desktop-navbar{
+    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    width: 180px;
-    background-color: bisque;
+    width: 200px;
 }
 
-.mobilenavbar{
-    display: none;
+#main-content{
+    width: calc(100% - 180px);
 }
 
-.topmenu{
-    list-style-type: none;
+.fakeheader{
+    max-width: 100%;
+    height: 100px ;
+    background-color: var(--headerbg-color);
     display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    background-color: aqua;
-} /* sistemare i singoli LI */
-
+    justify-content: right;
+}
 
 .content{
     background-color: lightcoral;
-    width: calc(100% - 180px);
+    height: calc(100% - 100px );
     overflow: auto;
-    padding: 15px;
+
 }
 
+
+.content ul li{
+    list-style-type: none;
+    padding: 0 15px;
+    padding-top: 15px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--grayfont-color);
+}
+
+.content ul li:hover{
+    color: var(--whitefont-color);
+}
+
+.content ul li:active{
+    border-bottom: 2px solid var(--Spotify-green);
+}
+
+
 .container{
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
     max-width: 100%;
 }
 
 .row{
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: aqua;
+    width: 100%;
 }
 
-.col{
-    max-width: calc(100% / 6);
-    flex: 1;
-    background-color: yellowgreen;
-    border: 1px solid black;
+.col {
+    flex-basis: calc(100% / 6);
 }
 
-.card{
-    
+.col .card p {
+    text-align: center;
+    font-style: italic;
+    color: var(--grayfont-color);
+}
+
+.card {
     margin: 10px;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+#h1subtitle{
+    margin-left: 20px;
+    color: var(--grayfont-color);
+    display: block;
 }
