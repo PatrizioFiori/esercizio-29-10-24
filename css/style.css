@@ -148,17 +148,73 @@ main {
     height: 100%;
   }
 
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!! RIPRENDERE DA QUI !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*
+- la navbar va sistemata sotto il pov margin e padding 
+*/
+
+
 .desktop-navbar{
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: cadetblue;
     height: 100%;
-    width: 200px;
+    width: 250px;
 }
 
+#logo{
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.desktop-navbar ul li{
+    list-style-type: none;
+}
+
+#navbarmenu li{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 2px;
+    padding-left: 10px;
+}
+
+#navbarmenu li:hover{
+    
+    border-left: 4px solid var(--Spotify-green);
+}
+
+#playlist h4{
+    color: var(--whitefont-color);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+#playlist ul li:first-child {
+    color: var(--grayfont-color);
+    display: block;
+    border-left: 1px solid var(--Spotify-green);
+}
+
+.fa-solid{
+    font-size: 40px;
+}
+
+
+
+
+
+
+
 #main-content{
-    width: calc(100% - 180px);
+    width: calc(100% - 250px);
 }
 
 .fakeheader{
@@ -170,7 +226,6 @@ main {
 }
 
 .content{
-    background-color: lightcoral;
     height: calc(100% - 100px );
     overflow: auto;
 
@@ -200,10 +255,12 @@ main {
     margin-top: 10px;
     margin-right: 20px;
     max-width: 100%;
+    margin-bottom: 10px;
 }
 
 .row{
     width: 100%;
+    padding-left: 15px;
 }
 
 .col {
@@ -217,8 +274,7 @@ main {
 }
 
 .card {
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
 }
 
 .card img {
