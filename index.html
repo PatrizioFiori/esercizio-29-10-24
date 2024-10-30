@@ -21,10 +21,10 @@
     <div class="topnavbar">
         <img src="./img/logo.svg" alt="WASD" id="logo">
         <ul id="navbarmenu">
-            <li> Home </li>
-            <li> Cerca </li>
-            <li> La tua libreria </li>
-        </ul>
+            <li> <i class="fa-sharp fa-solid fa-house"></i> Home </li>
+            <li> <i class="fa-solid fa-magnifying-glass"></i> Cerca </li>
+            <li> <i class="fa-solid fa-bookmark"></i> La tua libreria </li>
+        </ul> <!-- Le classi delle img non vengono visualizzate -->
     
         <div id="playlist"> 
             <h4>PLAYLIST</h4>
@@ -42,16 +42,16 @@
         </div>
     
         <div class="bottomnavbar">
-            <p> Installa app </p>
+            <p id="installa"> <i class="fa-regular fa-circle-down"></i> Installa app </p>
             <hr>
-            <p> John Doe </p>
+            <p id="user"> <i class="fa-regular fa-user"></i> John Doe </p>
         </div>
 </div>
 
 
 <section id="main-content">
 
-<div class="fakeheader">
+<div class="fakeheader d-flex">
     <button class="btn btn-interact"> Effettua l'upgrade </button>
 </div>
 
@@ -167,7 +167,31 @@
 </main>
 
 
-<footer> Footer </footer>
+<footer> 
+
+<div class="footermenu">
+
+    <div class="leftmenu">
+        <img src="./img/sinister.jpeg" alt="album">
+        <p>Sinister
+            <br>
+            brano nome
+        </p>
+        <span> 
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-folder"></i>
+        </span>
+        
+
+    </div>
+
+    <div class="centralmenu"> wasd  </div>
+
+    <div class="rightmenu">wasd</div>
+
+</div>
+
+</footer>
     
 </body>
 </html>

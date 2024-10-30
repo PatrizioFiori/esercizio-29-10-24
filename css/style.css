@@ -15,9 +15,10 @@ body{
 
 :root{
 
-    --navbg-color: #000000 ;
-    --headerbg-color: #161d2e;
-    --mainbg-color: #2a3344;
+    --navbg-color: #0a0a0a ;
+    --headerbg-color: #0b0e16;
+    /* --headerbg-color: rgba(11, 14, 22, 0.5); */
+    --mainbg-color: #12161d;
     --footerbg-color: #282828;
 
     --btn-color: #F0F0F0;
@@ -69,7 +70,6 @@ body{
     justify-content: flex-start;
 }
 
-
 .dis-none {
     display: none;
 }
@@ -92,10 +92,14 @@ h1 { /*Per i titoli delle sezioni*/
     font-size: 25px;
 }
 
-/* Utilities Interagibili*/
+
+
+
+/* Button e Interagibili*/
 
 .btn-interact:hover{
-    /* DA COMPLETARE */
+    color: var(--grayfont-color);
+    border: 1px solid var(--grayfont-color);
 }
 
 .link-interact:hover{
@@ -107,14 +111,17 @@ h1 { /*Per i titoli delle sezioni*/
 }
 
 
-.album-interact:hover{ /* da completare inserendo il simbolo del PLAY*/
+/* DA SISTEMARE L'HOVER DEGLI ALBUM
+.album-interact:hover{
     cursor: pointer;
     opacity: 50%;
 
 }
 
-
-/* Button */
+.row .col .card img:hover{
+    cursor: pointer;
+    opacity: 50%;
+}  */
 
 
 .btn{
@@ -130,7 +137,10 @@ h1 { /*Per i titoli delle sezioni*/
     
 }
 
-/**/
+
+
+
+/*--------------------------------------------------------*/
 
 
 footer {
@@ -149,17 +159,17 @@ main {
   }
 
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!! RIPRENDERE DA QUI !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-/*
-- la navbar va sistemata sotto il pov margin e padding 
-*/
 
 
 .desktop-navbar{
-    background-color: cadetblue;
+    background-color: var(--navbg-color);
     height: 100%;
     width: 250px;
+    list-style-type: none;
+}
+
+.desktop-navbar ul li{
+    list-style-type: none;
 }
 
 #logo{
@@ -169,21 +179,33 @@ main {
     margin-left: 20px;
 }
 
-.desktop-navbar ul li{
-    list-style-type: none;
-}
-
 #navbarmenu li{
     padding-bottom: 5px;
     padding-top: 5px;
-    margin-left: 2px;
     padding-left: 10px;
+    color: var(--grayfont-color);
+}
+
+#navbarmenu i{
+    font-size: 25px;
+    padding-right: 2px;
+    color: var(--grayfont-color);
 }
 
 #navbarmenu li:hover{
-    
     border-left: 4px solid var(--Spotify-green);
+    color: var(--whitefont-color);
+    cursor: pointer;
 }
+
+#navbarmenu li:hover i{
+    color: var(--whitefont-color);
+}
+
+
+
+
+/*Sezione playlist*/
 
 #playlist h4{
     color: var(--whitefont-color);
@@ -191,27 +213,58 @@ main {
     margin-bottom: 5px;
 }
 
-
-
-
-
-
+#playlist{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 5px;
+    padding-left: 10px;
+    color: var(--grayfont-color);
+}
 
 #playlist ul li:first-child {
-    color: var(--grayfont-color);
-    display: block;
-    border-left: 1px solid var(--Spotify-green);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.fa-solid{
-    font-size: 40px;
+#playlist ul li:hover {
+    color: var(--whitefont-color);
+    cursor: pointer;
+}
+
+#playlist i {
+    font-size: 38px;
+    padding-right: 5px;
+    vertical-align: middle;
+    color: var(--whitefont-color);
+}
+
+
+#playlist ul li:not(:first-child) {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
 
+.bottomnavbar {
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 15px;
+    color: var(--whitefont-color);
+}
+
+#installa{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#user {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
 
 
-
+/* Main */
 
 #main-content{
     width: calc(100% - 250px);
@@ -219,9 +272,11 @@ main {
 
 .fakeheader{
     max-width: 100%;
-    height: 100px ;
+    height: 100px;
     background-color: var(--headerbg-color);
-    display: flex;
+    /* background-color: rgba(11, 14, 22, 0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); */
     justify-content: right;
 }
 
@@ -285,4 +340,69 @@ main {
     margin-left: 20px;
     color: var(--grayfont-color);
     display: block;
+}
+
+
+/*FOOTER MENU*/
+
+.footermenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+}
+
+
+/*Left menu*/
+
+.leftmenu{
+    width: 25%;
+    height: 95%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    color: var(--grayfont-color);
+
+}
+
+.leftmenu img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 15%;
+
+}
+
+.leftmenu i {
+    margin: 10px;
+}
+
+.leftmenu p {
+    color: var(--whitefont-color);
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.leftmenu span{
+    padding-left: 20px;
+}
+
+/*Central menu*/
+
+
+/* DA STUDIARE MEGLIO */
+
+.centralmenu{
+    width: 50%;
+    color: var(--whitefont-color);
+}
+
+
+/*Right menu*/
+
+.rightmenu{
+    width: 25%;
+    background-color: aqua;
 }
