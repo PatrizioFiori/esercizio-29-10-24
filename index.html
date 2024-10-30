@@ -28,16 +28,18 @@
     
         <div id="playlist"> 
             <h4>PLAYLIST</h4>
-            <ul>
-                <li> <i class="fa-solid fa-square-plus"></i> Crea playlist </li>
-                <li> Nuova playlist </li>
-                <li> Nuova playlist </li>
-                <li> Nuova playlist </li>
-                <li> Nuova playlist </li>
-                <li> Nuova playlist </li>
-                <li> Nuova playlist </li>
-                <li> Nuova playlist </li>
-            </ul>
+            <div class="navscrollbar">
+                <ul>
+                    <li> <i class="fa-solid fa-square-plus"></i> Crea playlist </li>
+                    <li> Nuova playlist </li>
+                    <li> Nuova playlist </li>
+                    <li> Nuova playlist </li>
+                    <li> Nuova playlist </li>
+                    <li> Nuova playlist </li>
+                    <li> Nuova playlist </li>
+                    <li> Nuova playlist </li>
+                </ul>
+            </div>
         </div>
         </div>
     
@@ -173,14 +175,15 @@
 
     <div class="leftmenu">
         <img src="./img/sinister.jpeg" alt="album">
-        <p>Sinister
-            <br>
-            brano nome
-        </p>
-        <span> 
+        <div id="branoriprodotto">
+            <p>Sinister </p>
+            <p>Brano Nome</p>
+        </div>
+
+        <div id="leftmenuicon">
             <i class="fa-regular fa-heart"></i>
             <i class="fa-regular fa-folder"></i>
-        </span>
+        </div>
         
 
     </div>
@@ -188,14 +191,13 @@
     <div class="centralmenu"> 
     
         <div class="controls">
-            <i class="icon shuffle">🔀</i>
-            <i class="icon prev">⏮️</i>
-            <i class="icon play">▶️</i>
-            <i class="icon next">⏭️</i>
-            <i class="icon repeat">🔁</i>
+            <i class="icon fa-solid fa-shuffle"></i>
+            <i class="icon fa-solid fa-backward"></i>
+            <i class="icon fa-solid fa-play"></i>
+            <i class="icon fa-solid fa-forward"></i>
+            <i class="icon fa-solid fa-repeat"></i>
         </div>
         <div class="progress-bar">
-
 
             <span>0:25</span>
             <div class="bar">
@@ -206,7 +208,16 @@
     
     </div>
 
-    <div class="rightmenu">wasd</div>
+    <div class="rightmenu">
+        <i class="fa-solid fa-list"></i>
+        <i class="fa-solid fa-laptop"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        
+        <div class="volbar">
+            <div class="filledvolbar"></div>
+        </div>
+
+    </div>
 
 </div>
 
