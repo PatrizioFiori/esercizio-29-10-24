@@ -251,7 +251,7 @@ main {
 }
 
 .navscrollbar{
-    height: 100vh;
+    height: 100px;
     overflow: auto;
 }
 
@@ -295,7 +295,7 @@ main {
 }
 
 .content{
-    padding-top: 90px;
+    padding-top: 100px;
     height: 100%;
     /* height: calc(100% - 100px ); */
     overflow: auto;
