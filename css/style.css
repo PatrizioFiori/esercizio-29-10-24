@@ -8,7 +8,6 @@
 
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* color: var(--whitefont-color); */
 }
 
 /* Variabili */
@@ -17,7 +16,6 @@ body{
 
     --navbg-color: #0a0a0a ;
     --headerbg-color: #0b0e16;
-    /* --headerbg-color: rgba(11, 14, 22, 0.5); */
     --mainbg-color: #12161d;
     --footerbg-color: #282828;
 
@@ -140,7 +138,11 @@ h1 { /*Per i titoli delle sezioni*/
 
 
 
-/*--------------------------------------------------------*/
+
+
+
+
+/* MAIN & FOOTER */
 
 
 footer {
@@ -160,7 +162,9 @@ main {
 
 
 
-
+/* SEZIONE NAVBAR */
+ 
+  
 .desktop-navbar{
     background-color: var(--navbg-color);
     height: 100%;
@@ -203,15 +207,12 @@ main {
 }
 
 
-
-
-/*Sezione playlist*/
-
 #playlist h4{
     color: var(--whitefont-color);
     margin-top: 10px;
     margin-bottom: 5px;
 }
+
 
 #playlist{
     padding-bottom: 5px;
@@ -220,6 +221,7 @@ main {
     padding-left: 10px;
     color: var(--grayfont-color);
 }
+
 
 #playlist ul li:first-child {
     padding-top: 20px;
@@ -238,12 +240,10 @@ main {
     color: var(--whitefont-color);
 }
 
-
 #playlist ul li:not(:first-child) {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 
 
 .bottomnavbar {
@@ -262,6 +262,7 @@ main {
     padding-bottom: 5px;
     padding-top: 5px;
 }
+
 
 
 /* Main */
@@ -343,6 +344,13 @@ main {
 }
 
 
+
+
+
+
+
+
+
 /*FOOTER MENU*/
 
 .footermenu{
@@ -363,7 +371,7 @@ main {
     background-color: red;
     display: flex;
     align-items: center;
-    /* gap: 10px; */
+    gap: 10px;
     color: var(--grayfont-color);
 
 }
