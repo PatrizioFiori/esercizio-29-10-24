@@ -1,8 +1,68 @@
 
 
-/* ---- Modalità Tablet (sopra i 768px) ---- */
 
-@media screen and (min-width: 700px){
+/* ---- Modalità 1000 px ---- */
+
+@media screen and (max-width: 1000px){
+
+    .col {
+        max-width: calc(100% / 3);
+    }
 
 
+
+}
+
+
+/* ---- Modalità 700 px ---- */
+
+@media screen and (max-width: 700px){
+
+    .col {
+        max-width: calc(100% / 2);
+    }
+
+}
+
+
+
+/* ---- Modalità 600 px ---- */
+
+@media screen and (max-width: 600px){
+
+.desktop-navbar{
+    display: none;
+}
+
+.mobile-navbar{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-content{
+    width: calc(100% - 38px);
+}
+
+.fakeheader{
+    width: calc(100% - 38px);
+
+}
+
+}
+
+
+/* ---- Modalità 400px max-height per sistemare la navbar quando troppo ristretta ---- */
+
+
+@media screen and (max-height: 300px){
+
+    
+    .playlist{
+        display: none;
+    }
+
+    .bottomnavbar{
+        display: none;
+    }
 }
