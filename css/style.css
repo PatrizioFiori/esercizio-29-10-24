@@ -210,9 +210,6 @@ main {
 .playlist{
     height: 50%;
     overflow: auto;
-    /* scrollbar-color: green;
-    scrollbar-width: thin; 
-    DA CREARE UNA SCROLL PIU CARINA */
 }
 
 
@@ -307,117 +304,6 @@ main {
 }
 
 
-/* .desktop-navbar{
-    background-color: var(--navbg-color);
-    height: 100%;
-    width: 250px;
-    list-style-type: none;
-}
-
-.desktop-navbar ul li{
-    list-style-type: none;
-}
-
-.topnavbar {
-    overflow: hidden;
-}
-
-#logo{
-    width: 150px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-#navbarmenu li{
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 10px;
-    color: var(--grayfont-color);
-}
-
-#navbarmenu i{
-    font-size: 25px;
-    padding-right: 2px;
-    color: var(--grayfont-color);
-}
-
-#navbarmenu li:hover{
-    border-left: 4px solid var(--Spotify-green);
-    color: var(--whitefont-color);
-    cursor: pointer;
-}
-
-#navbarmenu li:hover i{
-    color: var(--whitefont-color);
-}
-
-
-#playlist h4{
-    color: var(--whitefont-color);
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-
-#playlist{
-    padding-bottom: 5px;
-    padding-top: 5px;
-    margin-left: 5px;
-    padding-left: 10px;
-    color: var(--grayfont-color);
-
-}
-
-
-#playlist ul li:first-child {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#playlist ul li:hover {
-    color: var(--whitefont-color);
-    cursor: pointer;
-}
-
-#playlist i {
-    font-size: 38px;
-    padding-right: 5px;
-    vertical-align: middle;
-    color: var(--whitefont-color);
-}
-
-#playlist ul li:not(:first-child) {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.navscrollbar{
-    height: 100%;
-    overflow: auto;
-}
-
-.bottomnavbar {
-    min-height: 70px;
-    padding-left: 10px;
-    padding-right: 15px;
-    color: var(--whitefont-color);
-}
-
-#installa{
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-#user {
-    padding-bottom: 5px;
-    padding-top: 5px;
-} */
-
-
-
-
-
 
 
 /* Main */
@@ -498,6 +384,7 @@ main {
     width: 100%;
 }
 
+
 #h1subtitle{
     margin-left: 20px;
     color: var(--grayfont-color);
@@ -524,7 +411,7 @@ main {
 }
 
 
-/*Left menu*/
+/*Left footer menu*/
 
 .leftmenu{
     width: 25%;
@@ -574,7 +461,7 @@ main {
 }
 
 
-/*Central menu*/
+/*Central footer menu*/
 
 .centralmenu{
     width: 50%;
@@ -634,7 +521,7 @@ main {
 
 
 
-/*Right menu*/
+/*Right footer menu*/
 
 .rightmenu{
     width: 25%;
