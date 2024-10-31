@@ -194,6 +194,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    background-color: var(--navbg-color);
 }  
 
 
