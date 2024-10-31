@@ -230,6 +230,7 @@ main {
 .mobile-navbar ul li:hover, .mobile-navbar i:hover{
     color: var(--whitefont-color);
     cursor: pointer;
+    
 }  
 
 .desktop-navbar {

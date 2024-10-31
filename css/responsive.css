@@ -66,6 +66,19 @@
     padding-left: 5px;
 }
 
+.leftmenu p{
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+.volbar{
+    display: none;
+}
+
+.filledvolbar {
+    display: none;
+}
+
 }
 
 
