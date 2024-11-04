@@ -120,8 +120,8 @@ h1 { /*Per i titoli delle sezioni*/
 /* Button e Interagibili*/
 
 .btn-interact:hover{
-    color: var(--grayfont-color);
-    border: 1px solid var(--grayfont-color);
+    color: var(--Spotify-green);
+    border: 1px solid var(--Spotify-green);
     transform: scale(1.1);
 }
 
@@ -588,11 +588,26 @@ main {
     background-color: #fff;
     height: 100%;
     width: 30%;
+    position: relative;
 }
 
 .filled:hover{
     background-color: var(--Spotify-green);
 }
+
+.filled:hover::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--whitefont-color);
+    border-radius: 50%; 
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%); 
+}
+
+
 
 
 
@@ -626,4 +641,17 @@ main {
     height: 100%;
     background-color: var(--whitefont-color);
     border-radius: 5px;
+    position: relative
+}
+
+.filledvolbar:hover::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--whitefont-color);
+    border-radius: 50%; 
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%); 
 }
