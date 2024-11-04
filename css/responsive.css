@@ -21,15 +21,6 @@
     .col {
         max-width: calc(100% / 2);
     }
-
-    .progress-bar{
-        width: 80%;
-    
-    }
-
-    #leftmenuicon{
-        padding-left: 10px;
-    }
 }
 
 
