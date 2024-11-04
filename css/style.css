@@ -187,7 +187,10 @@ main {
 
 
 /* SEZIONE NAVBAR */
- 
+
+
+/*Mobile navbar*/
+
 .mobile-navbar{
     width: 38px;
     display: flex;
@@ -195,8 +198,7 @@ main {
     justify-content: space-between;
     text-align: center;
     background-color: var(--navbg-color);
-}  
-
+}
 
 .mobile-navbar-top{
     color: var(--grayfont-color);
@@ -214,11 +216,10 @@ main {
     color: var(--grayfont-color);
 }
 
-
 .mobile-navbar-top img{
     width: 25px;
     padding-top: 5px;
-}  
+}
 
 .mobile-navbar ul li{
     list-style-type: none;
@@ -229,10 +230,18 @@ main {
 
 .mobile-navbar ul li:hover, .mobile-navbar i:hover{
     color: var(--whitefont-color);
-    cursor: pointer;
-    
+    cursor: pointer; 
 }  
 
+.mobile-navbar{
+    display: none;
+}
+
+
+
+/*Desktop navbar*/
+
+/*-----------------------------------------------------------------*/
 .desktop-navbar {
     background-color: var(--navbg-color);
     color: var(--grayfont-color);
@@ -240,12 +249,8 @@ main {
     width: 250px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between */
 }
 
-.mobile-navbar{
-    display: none;
-}
 
 .desktop-navbar ul{
     list-style-type: none;
@@ -259,8 +264,13 @@ main {
 /*La scrollbar deve essere solo sulla lista "playlist" In più per gestire meglio questa lista che scorre bisogna dare l'altezza in percentuale in modo che abbia una percentuale della classe padre*/
 .playlist{ 
     height: 50%;
+}
+
+.playlistscroll{
+    height: 80%;
     overflow: auto;
 }
+
 
 
 .bottomnavbar {
@@ -352,6 +362,14 @@ main {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+
+
+/*-----------------------------------------------------------------*/
+
+
+
+
 
 
 
