@@ -71,19 +71,3 @@
 }
 
 }
-
-
-/* ---- Modalità 400px max-height per sistemare la navbar quando troppo ristretta ---- */
-
-
-@media screen and (max-height: 300px){
-
-    
-    .playlist{
-        display: none;
-    }
-
-    .bottomnavbar{
-        display: none;
-    }
-}
